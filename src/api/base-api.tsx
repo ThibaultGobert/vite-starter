@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: "https://api.thecatapi.com/v1/images",
+  baseURL: "https://dummyjson.com/users/1",
   // withCredentials: true, // Send http-only cookie
 });
 
