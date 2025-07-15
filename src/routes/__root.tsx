@@ -28,8 +28,8 @@ export const Route = createRootRoute({
               asChild
               className={navigationMenuTriggerStyle()}
             >
-              <Link to="/about" className="[&.active]:font-bold">
-                About
+              <Link to="/emoji" className="[&.active]:font-bold">
+                Emoji
               </Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
