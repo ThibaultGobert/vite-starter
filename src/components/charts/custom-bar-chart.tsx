@@ -21,7 +21,7 @@ type EmojiData = {
 export const CustomBarChart = ({ data }: { data: EmojiData[] }) => {
   console.log("CustomBarChart data:", data);
   return (
-    <ChartContainer config={chartConfig} className="min-h-[200px] w-full">
+    <ChartContainer config={chartConfig} className="min-h-[200px] w-[600px]">
       <BarChart data={data}>
         <XAxis
           dataKey="emoji"
@@ -35,7 +35,7 @@ export const CustomBarChart = ({ data }: { data: EmojiData[] }) => {
           tickLine={false}
           tickMargin={10}
           axisLine={false}
-          tickFormatter={(value) => `${value}`}
+          tickFormatter={(value) => (Number.isInteger(value) ? value : "")}
         />
         <Bar dataKey="count" fill="#2563eb" radius={4} />
       </BarChart>
